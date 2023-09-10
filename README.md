@@ -1,5 +1,5 @@
 
-# Django CRM
+# Django Website
 
 This is a root stucture project of a organization, this is a simple project of multiple pages, a visitor also contact with the orgnizations here.
 
