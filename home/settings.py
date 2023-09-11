@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-c8%x%ui$-*h42_57@(+&lz#r1&7e9c7o3q^#&638nyk=(s&)m)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -134,3 +134,5 @@ STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static')
 ]
+# Without the line below csrf token will be error in the railway production
+CSRF_TRUSTED_ORIGINS = ['https://web-production-106e8.up.railway.app']
